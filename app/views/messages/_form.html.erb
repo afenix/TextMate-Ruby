@@ -1,4 +1,4 @@
-<% render "layouts/errors", object: @message %>
+<%= render "layouts/error", :object => @message %>
 
 <%= form_for @message do |f| %>
   <%= f.label :to %>
