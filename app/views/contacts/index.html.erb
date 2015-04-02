@@ -2,6 +2,11 @@
 
 <% @contacts.each do |contact| %>
   <div class="lead">
-    <%= contact.name %>
+    <%= contact.name %> <%= link_to "Edit", edit_contact_path(contact) %> |
+                        <%= link_to "Delete", contact_path(contact),
+                                            :data => { :confirm => "Are you sure",
+                                                        :method => "delete"} %>
   </div>
 <% end %>
+
+<%= link_to "New Contact", new_contact_path %>
