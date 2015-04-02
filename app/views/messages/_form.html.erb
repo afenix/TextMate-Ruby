@@ -2,9 +2,9 @@
 
 <%= form_for @message do |f| %>
   <%= f.label :to %>
-  <%= f.text_field :to %>
+  <%= f.text_field :to, :value => "9716789823" %>
   <%= f.label :from %>
-  <%= f.text_field :from %>
+  <%= f.text_field :from, :value => "5038223444" %>
   <%= f.label :body %>
   <%= f.text_area :body %>
   <%= f.submit "Send Text" %>

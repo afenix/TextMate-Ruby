@@ -39,6 +39,11 @@ class ContactsController < ApplicationController
     redirect_to contacts_path
   end
 
+  def show
+    @contact = Contact.find(params[:id])
+    @message = Message.new
+  end
+
 
 private
   def contact_params
