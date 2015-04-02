@@ -23,12 +23,12 @@ describe Message, :vcr => true do
 
   it "doesn't save the message if twilio gives an error" do
     message = FactoryGirl.build(:message, :to => '111222')
-    message.save.should be false
+    expect(message.save).to be false
   end
 
   it "will save the message if twilia numbers are valid" do
     message = FactoryGirl.build(:message)
-    message.save.should be true
+    expect(message.save).to be true
   end
 
 end

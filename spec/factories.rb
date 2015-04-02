@@ -4,4 +4,9 @@ FactoryGirl.define do
     to "9716789823"
     from "5038223444"
   end
+
+  factory :contact do
+    name "Charlie Brown"
+    cell "9716789823"
+  end
 end
