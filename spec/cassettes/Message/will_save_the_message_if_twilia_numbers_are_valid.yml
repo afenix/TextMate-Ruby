@@ -26,7 +26,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 02 Apr 2015 19:08:09 GMT
+      - Thu, 02 Apr 2015 21:19:47 GMT
       X-Powered-By:
       - AT-5000
       X-Shenanigans:
@@ -37,15 +37,15 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"sid": "SM1970438a201648348ebdad8989d45c6b", "date_created": "Thu,
-        02 Apr 2015 19:08:09 +0000", "date_updated": "Thu, 02 Apr 2015 19:08:09 +0000",
+      string: '{"sid": "SM23b1d078ba9846c59f652fbfa6bc8ed0", "date_created": "Thu,
+        02 Apr 2015 21:19:47 +0000", "date_updated": "Thu, 02 Apr 2015 21:19:47 +0000",
         "date_sent": null, "account_sid": "<twilio account sid>", "to": "+19716789823",
         "from": "+15038223444", "body": "This is the body of the message", "status":
         "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api",
         "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code":
         null, "error_message": null, "uri": "/2010-04-01/Accounts/<twilio account
-        sid>/Messages/SM1970438a201648348ebdad8989d45c6b.json", "subresource_uris":
-        {"media": "/2010-04-01/Accounts/<twilio account sid>/Messages/SM1970438a201648348ebdad8989d45c6b/Media.json"}}'
+        sid>/Messages/SM23b1d078ba9846c59f652fbfa6bc8ed0.json", "subresource_uris":
+        {"media": "/2010-04-01/Accounts/<twilio account sid>/Messages/SM23b1d078ba9846c59f652fbfa6bc8ed0/Media.json"}}'
     http_version: 
-  recorded_at: Thu, 02 Apr 2015 19:08:09 GMT
+  recorded_at: Thu, 02 Apr 2015 21:19:47 GMT
 recorded_with: VCR 2.9.3

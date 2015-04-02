@@ -1,4 +1,5 @@
 class Message < ActiveRecord::Base
+  has_and_belongs_to_many :contacts
   validates :body, :presence => true
   validates :to, :presence => true
   validates :from, :presence => true

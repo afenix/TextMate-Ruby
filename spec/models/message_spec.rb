@@ -4,6 +4,7 @@ describe Message, :vcr => true do
   it { should validate_presence_of :body }
   it { should validate_presence_of :to }
   it { should validate_presence_of :from }
+  it { should have_and_belong_to_many :contacts }
 
   it "will return the body of a text from the user" do
     message = FactoryGirl.build(:message, :body => "Test123")
@@ -25,7 +26,7 @@ describe Message, :vcr => true do
     message.save.should be false
   end
 
-  it "will save the message if twili numbers are valid" do
+  it "will save the message if twilia numbers are valid" do
     message = FactoryGirl.build(:message)
     message.save.should be true
   end
