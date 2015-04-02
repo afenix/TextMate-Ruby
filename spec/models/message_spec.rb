@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Message do
+describe Message, :vcr => true do
   it { should validate_presence_of :body }
   it { should validate_presence_of :to }
   it { should validate_presence_of :from }
@@ -18,6 +18,11 @@ describe Message do
   it "will return the 'from' of a text from a user" do
     message = FactoryGirl.create(:message, :from => "8475213698")
     expect(message.from).to eq "8475213698"
+  end
+
+  it "doesn't save the message if twilio gives an error" do
+    message = FactoryGirl.create(:message, :to => '111222', :from => '9716789823')
+    message.save.should be false
   end
 
 end

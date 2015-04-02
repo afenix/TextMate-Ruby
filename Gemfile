@@ -7,6 +7,7 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'rest-client'
 
 group :development do
   gem 'byebug'
@@ -17,10 +18,13 @@ end
 
 group :test, :development do
   gem 'rspec-rails'
+  gem 'dotenv-rails'
 end
 
 group :test do
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
   gem 'capybara'
+  gem 'vcr'
+  gem 'webmock'
 end
